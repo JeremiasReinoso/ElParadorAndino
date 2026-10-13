@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="El Parador Andino: sabores de montaña y espíritu patagónico." />
+    <title>El Parador Andino | Sabores de montaña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#carta">Saltar al contenido</a>
+    <header class="site-header" id="inicio">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="El Parador Andino, inicio">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span><strong>El Parador</strong><em>Andino</em></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#carta">Nuestra carta</a>
+          <a href="#nosotros">Sobre nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <a class="button button-primary nav-cta" href="#carta">Ver la carta</a>
+        <button class="cart-trigger" type="button" aria-label="Abrir carrito, 0 productos">
+          <span class="cart-icon" aria-hidden="true">🛒</span><span>Pedido</span><b class="cart-count">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Refugio de montaña rodeado de bosque y cordillera"></div>
+        <div class="hero-content container">
+          <p class="eyebrow light">Cocina de refugio · Patagonia</p>
+          <h1 id="hero-title">Sabores de montaña,<br /><i>espíritu patagónico.</i></h1>
+          <p class="hero-copy">Descubrí una propuesta gastronómica para disfrutar de buenos sabores, productos irresistibles y la calidez de nuestro parador.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#carta">Explorar la carta <span>↗</span></a><button class="button button-ghost" type="button" data-open-cart>Ver mi pedido <span>→</span></button></div>
+          <div class="hero-note"><span class="note-line"></span><span>Un alto en el camino<br />para disfrutar sin apuro</span></div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">↓</div>
+      </section>
+
+      <section class="category-section section-pad" aria-labelledby="categories-title">
+        <div class="container">
+          <div class="section-heading split-heading"><div><p class="eyebrow">Elegí tu antojo</p><h2 id="categories-title">Algo rico empieza<br /><i>por acá.</i></h2></div><p class="section-intro">Clásicos irresistibles y sabores para compartir. Explorá la carta a tu ritmo.</p></div>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="menu-section section-pad" id="carta" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">Nuestra carta</p><h2 id="menu-title">Hecho para<br /><i>disfrutar.</i></h2></div>
+          <div class="filter-row" id="filter-row" aria-label="Filtrar la carta"></div>
+          <div class="products-grid" id="products-grid" aria-live="polite"></div>
+          <p class="empty-state hidden" id="empty-products">No encontramos productos en esta categoría.</p>
+        </div>
+      </section>
+
+      <section class="story-section" id="nosotros" aria-labelledby="story-title">
+        <div class="story-photo" role="img" aria-label="Mesa de madera con comida y paisaje de montaña"></div>
+        <div class="story-content"><p class="eyebrow">El espíritu del parador</p><h2 id="story-title">Un lugar para<br /><i>disfrutar.</i></h2><p>En El Parador Andino queremos compartir el gusto por la buena comida en un ambiente cálido, con una propuesta que combina clásicos irresistibles y el espíritu de la Patagonia.</p><span class="story-signature">Nos vemos en la mesa <b>✦</b></span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+      <div class="container footer-main"><div class="footer-brand"><a class="brand brand-light" href="#inicio"><span class="brand-mark" aria-hidden="true">✦</span><span><strong>El Parador</strong><em>Andino</em></span></a><p>Sabores de montaña,<br />espíritu patagónico.</p></div><div class="footer-column"><h3>Explorá</h3><a href="#carta">Nuestra carta</a><a href="#nosotros">Sobre nosotros</a><a href="#contacto">Contacto</a></div><div class="footer-column"><h3>Encontranos</h3><p id="footer-address">Dirección a confirmar</p><p id="footer-hours">Horarios a confirmar</p></div><div class="footer-column"><h3>Seguinos</h3><p id="footer-socials">Redes sociales a confirmar</p><button class="footer-whatsapp" type="button" data-whatsapp>WhatsApp <span>↗</span></button></div></div>
+      <div class="container footer-bottom"><span>© <span id="current-year"></span> El Parador Andino</span><span>Hecho con calma y buenos ingredientes.</span></div>
+    </footer>
+
+    <aside class="cart-drawer" aria-label="Tu pedido" aria-hidden="true"><div class="drawer-backdrop" data-close-cart></div><div class="drawer-panel"><div class="drawer-header"><div><p class="eyebrow">Tu selección</p><h2>Mi pedido</h2></div><button class="close-button" type="button" aria-label="Cerrar carrito" data-close-cart>×</button></div><div class="cart-content" id="cart-content"></div><div class="cart-footer"><div class="total-row"><span>Total estimado</span><strong id="cart-total">Consultar precio</strong></div><p class="price-note" id="cart-price-note"></p><button class="button button-primary full-width" type="button" id="checkout-button">Continuar con el pedido <span>→</span></button><button class="text-button" type="button" id="clear-cart">Vaciar carrito</button></div></div></aside>
+
+    <dialog class="order-dialog" id="order-dialog"><div class="dialog-inner"><button class="close-button dialog-close" type="button" aria-label="Cerrar formulario">×</button><p class="eyebrow">Último paso</p><h2>¿Cómo coordinamos<br /><i>tu pedido?</i></h2><p class="dialog-copy">Completá tus datos y te llevamos a WhatsApp para revisar el mensaje antes de enviarlo.</p><form id="order-form" novalidate><label for="customer-name">Tu nombre <span>*</span></label><input id="customer-name" name="customerName" type="text" autocomplete="name" required /><p class="field-error" data-error-for="customer-name"></p><fieldset><legend>Modalidad <span>*</span></legend><label class="radio-card"><input type="radio" name="fulfillment" value="Retirar en el local" checked /><span><b>Retirar en el local</b><small>Coordinamos el horario por WhatsApp</small></span></label><label class="radio-card"><input type="radio" name="fulfillment" value="Consultar por entrega" /><span><b>Consultar por entrega</b><small>Disponible a confirmar por el local</small></span></label></fieldset><div class="address-field hidden" id="address-field"><label for="customer-address">Dirección para consultar</label><input id="customer-address" name="address" type="text" autocomplete="street-address" /><p class="field-error" data-error-for="customer-address"></p></div><label for="order-notes">Observaciones <small>(opcional)</small></label><textarea id="order-notes" name="notes" rows="3" placeholder="¿Algo que quieras contarnos?"></textarea><p class="form-status" id="form-status" role="alert"></p><button class="button button-primary full-width" type="submit">Revisar pedido en WhatsApp <span>↗</span></button></form></div></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/config.js"></script><script src="js/app.js"></script>
+  </body>
+</html>
