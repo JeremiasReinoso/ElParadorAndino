@@ -1,8 +1,8 @@
 /* CONFIGURACIÓN EDITABLE — modificá este archivo para actualizar la carta y los datos reales. */
 const RESTAURANT_CONFIG = {
   name: 'El Parador Andino', currency: 'ARS', locale: 'es-AR',
-  // Dejar vacío hasta confirmar el número. Debe incluir código país, sin +, espacios ni guiones.
-  WHATSAPP_NUMBER: '',
+  // Reemplazar por el número real del negocio. Debe incluir código país, sin +, espacios ni guiones.
+  WHATSAPP_NUMBER: '5491123456789',
   address: 'Dirección a confirmar', hours: 'Horarios a confirmar',
   socialLabel: 'Redes sociales a confirmar', deliveryEnabled: false,
   categories: [
