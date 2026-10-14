@@ -8,12 +8,12 @@ const RESTAURANT_CONFIG = {
   address: 'Dirección a confirmar', hours: 'Horarios a confirmar',
   socialLabel: 'Redes sociales a confirmar', deliveryEnabled: false,
   categories: [
-    { id: 'hamburguesas', name: 'Hamburguesas', shortName: 'Hamburguesas', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80' },
-    { id: 'cervezas', name: 'Cervezas artesanales', shortName: 'Cervezas', image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80' },
-    { id: 'ensaladas', name: 'Ensaladas mixtas', shortName: 'Ensaladas', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80' },
-    { id: 'papas', name: 'Papas fritas', shortName: 'Papas fritas', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80' },
-    { id: 'milanesas', name: 'Milanesas a la napolitana', shortName: 'Milanesas', image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80' },
-    { id: 'lasagna', name: 'Lasagna', shortName: 'Lasagna', image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367a0?auto=format&fit=crop&w=600&q=80' }
+    { id: 'hamburguesas', name: 'Hamburguesas', shortName: 'Hamburguesas', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=84', tag: 'El favorito de la casa', description: 'Ese primer mordisco que lo cambia todo.', featured: true },
+    { id: 'milanesas', name: 'Milanesas a la napolitana', shortName: 'Milanesas', image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=84', tag: 'Clásico sin discusión', description: 'Un clásico que nunca falla.', featured: true },
+    { id: 'papas', name: 'Papas fritas', shortName: 'Papas fritas', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=84', tag: 'Para la mesa (o no)', description: 'Aunque siempre podés intentar compartirlas.', featured: true },
+    { id: 'cervezas', name: 'Cervezas artesanales', shortName: 'Cervezas', image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=84', tag: 'Brindis de altura', description: 'Un brindis con sabor a montaña.', featured: true },
+    { id: 'ensaladas', name: 'Ensaladas mixtas', shortName: 'Ensaladas', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=84', tag: 'Fresca y sin vueltas', description: 'Color, frescura y algo rico en cada bocado.' },
+    { id: 'lasagna', name: 'Lasagna', shortName: 'Lasagna', image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367a0?auto=format&fit=crop&w=900&q=84', tag: 'Abrazo en capas', description: 'Capas de pasta, salsa y queso para quedarse un rato.' }
   ],
   products: [
     { id: 'hamburguesa-clasica', name: 'Hamburguesa clásica', category: 'hamburguesas', description: 'Hamburguesa servida en pan con ingredientes frescos.', price: 0, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=82', available: true },
