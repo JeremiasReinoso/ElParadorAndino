@@ -1,5 +1,9 @@
 /* CONFIGURACIÓN EDITABLE — modificá este archivo para actualizar la carta y los datos reales. */
-const RESTAURANT_CONFIG = {
+// La configuración se expone en `window` porque `app.js` se carga después
+// y la utiliza como fuente única para categorías, productos, carrito y datos
+// de contacto. Mantener este contrato evita que el renderizado dependa del
+// alcance local de este archivo.
+window.RESTAURANT_CONFIG = {
   name: 'El Parador Andino', currency: 'ARS', locale: 'es-AR',
   // Reemplazar por el número real del negocio. Debe incluir código país, sin +, espacios ni guiones.
   // Teléfono informado: 02804677802 (Argentina). Para WhatsApp se usa formato internacional.
