@@ -2,7 +2,9 @@
 const RESTAURANT_CONFIG = {
   name: 'El Parador Andino', currency: 'ARS', locale: 'es-AR',
   // Reemplazar por el número real del negocio. Debe incluir código país, sin +, espacios ni guiones.
-  WHATSAPP_NUMBER: '5491123456789',
+  // Teléfono informado: 02804677802 (Argentina). Para WhatsApp se usa formato internacional.
+  PHONE_DISPLAY: '02804677802', PHONE_NUMBER: '542804677802',
+  WHATSAPP_NUMBER: '5492804677802',
   address: 'Dirección a confirmar', hours: 'Horarios a confirmar',
   socialLabel: 'Redes sociales a confirmar', deliveryEnabled: false,
   categories: [
